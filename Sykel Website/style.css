@@ -11,11 +11,14 @@ a, p {
     text-decoration: none;
     color: #555;
 }
+.other_p {
+    padding-top: 20px;
+}
 ul {
     list-style: none;  
 }
 /*landing page*/
-.main {
+.main, .other {
     position: relative;
     display: flex;
     background-color: #3FD0C7;
@@ -71,11 +74,12 @@ ul {
     flex-direction: row;
     width: 100%;
     height: auto;
+    padding-left: 15%;
 }
 .text_area, .bg_img_bx, .img_bx {
     flex-basis: 50%;
     max-width: 500px;
-    margin-top: 80px;
+    margin-top: 25%;
 }
 .text_area h1 {
     font-size: 3.75em;
@@ -83,6 +87,7 @@ ul {
 }
 .text_area p {
     max-width: 350px;
+    font-size: 0.95em;
 }
 span{
     color: #3FD0C7;
@@ -139,7 +144,7 @@ section {
     padding-top: 70px;
     color: #555;
 }
-.text_area2 {
+.text_area2, .text_area3 {
     flex-basis: 50%;
     max-width: 400px;
     align-items: center;
@@ -151,6 +156,9 @@ section {
 h3 {
     color: #3FD0C7;
 }
+.other_h3 {
+    color: #e1f2ff;
+} 
 p {
     font-size: .75em;
 }
@@ -196,13 +204,13 @@ input[type=submit] {
 /*footer*/
 footer {
     background-color: #3FD0C7;
-    bottom: 0;
-    left: 0;
-    right: 0;
     height: 240px;
     width: 100vw;
     padding-top: 40px;
     color: #fff;
+}
+.privacy_footer {
+    margin-left: -40%;
 }
 #footer_content {
     position: sticky;
@@ -239,17 +247,17 @@ footer {
 .footer_icon {
     width: 100px;
     height: 100px;
+    font-size: 30px;
 }
 .footer_copy {
     display: flex;
     justify-content: center;
     width: 100%;
-    margin-bottom: 15px;
-    margin-top: 20px;
+    margin-top: 5px;
 }
 .footer_copy h6 {
     font-weight: 300;
-    color: #f1f1f1;
+    color: #3FD0C7;
 }
 /*MOBILE SCREEN*/
 @media only screen and (max-width: 952px) {
@@ -264,12 +272,20 @@ footer {
     }
     #hero {
         flex-direction: column;
+        margin-top: -50px;
     }
     .text_area {
         flex-basis: 100%;
         max-width: 300px;
-        margin-top: -100px;
+        margin-top: 70%;
         margin-right: 30px;
+    }
+    .text_area p {
+        font-size: 0.95em;
+    }
+    .text_area3 {
+        margin-top: 150px;
+        max-width: 70%;
     }
     .text_area h1 {
         font-size: 2.95em;
@@ -333,5 +349,13 @@ footer {
     footer {
         display: flex;
         flex-direction: column;
+    }
+    .privacy_footer {
+        margin-left: -15%;
+    }
+    .footer_icon {
+        width: 100px;
+        height: 100px;
+        font-size: 20px;
     }
 }
