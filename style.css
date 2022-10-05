@@ -29,6 +29,12 @@ p {
 ul {
   list-style: none;
 }
+
+img.screenshot {
+  width: 100%;
+  object-fit: contain;
+}
+
 /*landing page*/
 .main,
 .other {
@@ -173,7 +179,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #f1f1f1;
+  /* background: #f1f1f1; */
   overflow: hidden;
 }
 #features {
@@ -418,10 +424,195 @@ footer {
 }
 
 /* Utility Classes */
-.container {
+.container_util {
   --max-width: 1110px;
   --container-padding: 1rem;
+  padding: 2em;
 
   width: min(var(--max-width), 100% - (var(--container-padding) * 2));
   margin-inline: auto;
+}
+
+.info--img {
+  /* flex-basis: 60%; */
+  width: 40%;
+}
+
+.info--text {
+  width: 60%;
+}
+
+@media (max-width: 768px) {
+  section.info {
+    flex-direction: column;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid rgb(143, 143, 143);
+  }
+
+  .info--text {
+    margin-bottom: 2rem;
+    width: 40%;
+  }
+
+  .info--img {
+    /* flex-basis: 60%; */
+    /* width: 100%; */
+    width: 40%;
+    /* align-self: flex-start; */
+  }
+}
+
+/* 
+-----------------------------------
+MARGIN STYLES - ALL ROUND
+-----------------------------------
+*/
+.m--1 {
+  margin: 1rem;
+}
+
+.m--2 {
+  margin: 1.5rem;
+}
+
+.m--3 {
+  margin: 2rem;
+}
+
+.m--4 {
+  margin: 3rem;
+}
+
+.m--5 {
+  margin: 4rem;
+}
+
+/* 
+-----------------------------------
+MARGIN STYLES - TOP AND BOTTOM
+-----------------------------------
+*/
+.my--1 {
+  margin: 1rem 0;
+}
+
+.my--2 {
+  margin: 1.5rem 0;
+}
+
+.my--3 {
+  margin: 2rem 0;
+}
+
+.my--4 {
+  margin: 3rem 0;
+}
+
+.my--5 {
+  margin: 4rem 0;
+}
+
+.my--9 {
+  margin: 10rem 0;
+}
+
+/* 
+-----------------------------------
+MARGIN STYLES - LEFT AND RIGHT
+-----------------------------------
+*/
+.mx--1 {
+  margin: 0 1rem;
+}
+
+.mx--2 {
+  margin: 0 1.5rem;
+}
+
+.mx--3 {
+  margin: 0 2rem;
+}
+
+.mx--4 {
+  margin: 0 3rem;
+}
+
+.mx--5 {
+  margin: 0 4rem;
+}
+
+/* 
+-----------------------------------
+PADDING STYLES - ALL ROUND
+-----------------------------------
+*/
+.p--1 {
+  padding: 1rem;
+}
+
+.p--2 {
+  padding: 1.5rem;
+}
+
+.p--3 {
+  padding: 2rem;
+}
+
+.p--4 {
+  padding: 3rem;
+}
+
+.p--5 {
+  padding: 4rem;
+}
+
+/* 
+-----------------------------------
+PADDING STYLES - TOP AND BOTTOM 
+-----------------------------------
+*/
+.py--1 {
+  padding: 1rem 0;
+}
+
+.py--2 {
+  padding: 1.5rem 0;
+}
+
+.py--3 {
+  padding: 2rem 0;
+}
+
+.py--4 {
+  padding: 3rem 0;
+}
+
+.py--5 {
+  padding: 4rem 0;
+}
+
+/* 
+-----------------------------------
+PADDING STYLES - LEFT AND RIGHT
+-----------------------------------
+*/
+.px--1 {
+  padding: 0 1rem;
+}
+
+.px--2 {
+  padding: 0 1.5rem;
+}
+
+.px--3 {
+  padding: 0 2rem;
+}
+
+.px--4 {
+  padding: 0 3rem;
+}
+
+.px--5 {
+  padding: 0 4rem;
 }
