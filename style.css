@@ -27,7 +27,6 @@ ul {
 /*landing page*/
 .main,
 .other {
-  position: relative;
   display: flex;
   background-color: var(--clr-bcg);
   width: 100%;
@@ -35,7 +34,7 @@ ul {
 }
 /*navbar*/
 .nav_bar {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   display: flex;
