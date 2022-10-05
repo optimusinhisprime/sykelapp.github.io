@@ -59,6 +59,34 @@ ul {
   margin: 0 40px;
   float: right;
 }
+
+.nav_links a {
+  position: relative;
+}
+
+.nav_links a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #000;
+  left: 0;
+  bottom: 0;
+  /* opacity: 0; */
+  transform-origin: center;
+  transition: transform, opacity, width 0.3s ease;
+  -webkit-transition: transform, opacity, width 0.3s ease;
+  -moz-transition: transform, opacity, width 0.3s ease;
+  -ms-transition: transform, opacity, width 0.3s ease;
+  -o-transition: transform, opacity, width 0.3s ease;
+}
+
+.nav_links a:hover::after,
+.nav_links a:focus::after {
+  width: 100%;
+  opacity: 1;
+}
+
 .btn {
   padding: 8px 20px;
   background: #f1f1f1;
