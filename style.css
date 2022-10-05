@@ -8,6 +8,7 @@ html {
 :root {
   --clr-bcg: #3fd0c7;
   --clr-text-main: #555;
+  --max-width: 1110px;
   /* --clr-btn-primary: #f1f1f1; */
 }
 
@@ -117,16 +118,23 @@ ul {
 #hero {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  height: auto;
+
+  height: 100vh;
+  /* height: 90vh2; */
+  height: 100vh;
+  background-color: var(--clr-bcg);
   /* padding-left: 15%; */
 }
+
 .text_area,
 .bg_img_bx,
 .img_bx {
   flex-basis: 50%;
   max-width: 500px;
-  margin-top: 25%;
+  /* margin-top: 25%; */
 }
 .text_area h1 {
   font-size: 3.75em;
@@ -321,7 +329,7 @@ footer {
   }
   #hero {
     flex-direction: column;
-    margin-top: -50px;
+    /* margin-top: -150px; */
   }
   .text_area {
     flex-basis: 100%;
